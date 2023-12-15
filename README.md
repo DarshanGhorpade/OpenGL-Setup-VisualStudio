@@ -126,4 +126,4 @@ int main(int argc, char** argv)
 }
 ```
 ### output
-[](https://media.geeksforgeeks.org/wp-content/uploads/20210223002929/Screenshot315.png)
+![output of sample code](https://media.geeksforgeeks.org/wp-content/uploads/20210223002929/Screenshot315.png)
