@@ -1,31 +1,34 @@
-# opengl_setup
-opengl_setup with visual studio 2019
+# OpenGL Setup with Visual Studio 2019
 
-1. Download GLUT header file, the .LIB, and .DLL files all pre-compiled for Intel platforms, you can simply download the glutdlls37beta.zip file from the [website](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-2. After this, we have to copy the file as instructed below:
-   - First, paste glut.h file in:
-     ```
-     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include\gl
-     ```
-   - Then paste glut.lib in:
-     ```
-     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64
-     ```
-   - Then paste the glut32.lib in:
-     ```
-     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86
-     ```
-   - Then paste glut.dll and glut32.dll in:
-     ```
-     C:\Windows\SysWOW64
-     ```
-   - Finally  copy glut32.dll to:
-     ```
-     C:\Windows\System32 
-     ```
+## Introduction
+This repository provides guidance on setting up OpenGL within Visual Studio 2019. Included is a sample code demonstrating the Midpoint Ellipse Algorithm for drawing ellipses.
 
-### Sample code
-```
+## Setup Instructions
+
+### Step 1: Download GLUT Files
+Download the necessary GLUT files pre-compiled for Intel platforms:
+- **Option 1:** Download the [glutdlls37beta.zip file](https://www.opengl.org/resources/libraries/glut/glut_downloads.php) from the official website.
+- **Option 2:** Alternatively, use the provided ZIP file from this repository.
+
+### Step 2: File Placement
+Follow these instructions to place the downloaded files correctly:
+- **glut.h**: Copy to:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include\gl
+- **glut.lib**: Paste in:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64
+- **glut32.lib**: Add to:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86
+- **glut.dll** and **glut32.dll**: Place in:
+  C:\Windows\SysWOW64
+- **glut32.dll**: Finally, copy to:
+  C:\Windows\System32
+
+
+## Sample Code
+
+### Code Snippet
+Here's a code snippet demonstrating the Midpoint Ellipse Algorithm for drawing ellipses using OpenGL:
+```cpp
 #include <GL/glut.h>
 #include<iostream>
 using namespace std;
@@ -125,5 +128,7 @@ int main(int argc, char** argv)
 	return 0;
 }
 ```
-### output
+## Output
+
+### Image Result
 ![output of sample code](https://media.geeksforgeeks.org/wp-content/uploads/20210223002929/Screenshot315.png)
